@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package example.protobuf;
+
+import "scalapb/scalapb.proto";
+
+message Seconds {
+  option (scalapb.message).no_box = true;  // do not wrap in Option
+  int32 seconds = 1;
+}
+
+message Minutes {
+  option (scalapb.message).no_box = true;  // do not wrap in Option
+  int32 minutes = 1;
+}
+
+message Duration {
+  option (scalapb.message).no_box = true;  // do not wrap in Option
+  oneof duration_optional {
+    Seconds seconds = 1;
+    Minutes minutes = 2;
+  }
+}
