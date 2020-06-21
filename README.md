@@ -1,4 +1,4 @@
-# sbt-native-packager-docker-issue-1348
+# scalapb-oneof-nobox-issue-858
 
 Original bug report at [https://github.com/scalapb/ScalaPB/issues/858](https://github.com/scalapb/ScalaPB/issues/858)
 
